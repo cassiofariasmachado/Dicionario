@@ -26,7 +26,7 @@ public class Teste {
 			avl.insert(new Dicionario("ce", null));
 			
 			
-			System.out.println(avl.toString());
+			avl.inOrder();
 
 	}
 

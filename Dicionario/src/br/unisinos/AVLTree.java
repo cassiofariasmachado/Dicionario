@@ -385,7 +385,7 @@ public class AVLTree <T extends Comparable<T>> {
 	 */
 	private void preOrder(AVLNode <T> node){
 		if (node != null){
-			System.out.print(node.getKey()+ " ");
+			System.out.print(node.getKey()+ "\n");
 			preOrder(node.getLeft());
 			preOrder(node.getRight());
 		}
@@ -406,7 +406,7 @@ public class AVLTree <T extends Comparable<T>> {
 		if (node != null){
 			postOrder(node.getLeft());
 			postOrder(node.getRight());
-			System.out.print(node.getKey()+ " ");
+			System.out.print(node.getKey()+ "\n");
 		}
 	}
 	
@@ -424,7 +424,7 @@ public class AVLTree <T extends Comparable<T>> {
 	private void inOrder(AVLNode<T> node){
 		if (node != null){
 			inOrder(node.getLeft());
-			System.out.print(node.getKey()+ " ");
+			System.out.print(node.getKey()+ "\n");
 			inOrder(node.getRight());
 		}
 	}
